@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="plugin.video.No1" name="No1 IPTV" version="2.0" provider-name="Stjep">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+        <import addon="script.module.python.koding.aio" version="0.0.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Live Tv i Radio</summary>
+		<description lang="en">Autor ovog addona nije admin samih izvora, tako da ne odgovara za poslijedice.
+		  Uživajte u gledanju omiljenih Tv kanala i radio postaja :)</description>
+		<platform>all</platform>
+		<forum>http://www.noobsandnerds.com/support</forum>
+		<website>www.noobsandnerds.com</website>
+		<news></news>
+		<genre>livetv</genre>
+		<video_guide></video_guide>
+		<video_preview></video_preview>
+	</extension>
+</addon>
+
+<addon id="plugin.video.RobinHood" name="Robin Hood" version="1.0" provider-name="Tojelako">
+  <requires>
+    <import addon="plugin.video.f4mTester"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+    <import addon="script.module.livestreamer" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Robin Hood</summary>
+    <description lang="en">RobinHood
+
+	</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="repository.KM" name="KM Repo" version="1.0" provider-name="KodiMatija">
+	<extension point="xbmc.addon.repository" name="KM Repo">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/</datadir>
+		</dir>
+		<info compressed="false">https://raw.githubusercontent.com/kodimatija/repository.KM/master/zips/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/kodimatija/repository.KM/master/zips/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/kodimatija/repository.KM/master/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">KodiMatija repo</summary>
+		<description lang="en">Video dodaci i buildovi</description>
+		<genre>devtools,livetv,movies,tvshows,wizard</genre>
+	</extension>
+</addon>
+</addons>

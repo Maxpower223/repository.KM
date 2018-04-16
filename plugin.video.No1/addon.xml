@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.No1" name="No1 IPTV" version="2.0" provider-name="Stjep">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+        <import addon="script.module.python.koding.aio" version="0.0.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Live Tv i Radio</summary>
+		<description lang="en">Autor ovog addona nije admin samih izvora, tako da ne odgovara za poslijedice. 
+		  Uživajte u gledanju omiljenih Tv kanala i radio postaja :)</description>
+		<platform>all</platform>
+		<forum>http://www.noobsandnerds.com/support</forum>
+		<website>www.noobsandnerds.com</website>
+		<news></news>
+		<genre>livetv</genre>
+		<video_guide></video_guide>
+		<video_preview></video_preview>
+	</extension>
+</addon>
